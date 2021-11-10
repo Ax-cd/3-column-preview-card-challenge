@@ -30,10 +30,14 @@ body {
     min-height: 100vh;
 }
 
+
+
 h1 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
     color: hsl(0, 0%, 95%);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 p, .button, .attribution {
@@ -44,15 +48,18 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
 }
 
+
+
+
 main {
-    border: 2px solid blueviolet;
-    width: 1080px;
+    /* border: 2px solid blueviolet; */
+    width: 1000px;
     height: 475px;
     display: flex;
 }
 
-
 .sedans, .suvs, .luxury {
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -63,32 +70,46 @@ main {
 main img {
     width: 65px;
     height: 40px;
+    margin-bottom: 0;
 }
+
+
+main p {
+    border: 1px solid black;
+    line-height: 180%;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* main .luxury p {
+    padding: 5px 0 5px 0;
+} */
 
 
 
 .sedans {
-    border: 2px solid seagreen;
+    /* border: 2px solid seagreen; */
     background-color: hsl(31, 77%, 52%);
-    /* border-radius: 5px 0 0 5px; */
+    border-radius: 6px 0 0 6px;
 
 }
 
 .suvs {
-    border: 2px solid sienna;
+    /* border: 2px solid sienna; */
     background-color: hsl(184, 100%, 22%);
 
 }
 
 .luxury {
-    border: 2px solid salmon;
+    /* border: 2px solid salmon; */
     background-color: hsl(179, 100%, 13%);
+    border-radius: 0 6px 6px 0;
 
 }
 
 
 
-
+/* BUTTON */
 
 .button {
     width: 120px;
@@ -112,6 +133,7 @@ main img {
 }
 
 
+/* BUTTON:HOVER */
 
 .button:hover {
     color: hsl(0, 0%, 95%);
@@ -135,13 +157,12 @@ main img {
 
 
 .attribution {
-    border: 2px solid palevioletred;
+    /* border: 2px solid palevioletred; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
-    margin: 5px 0 0 0;
+    padding-top: 2%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
