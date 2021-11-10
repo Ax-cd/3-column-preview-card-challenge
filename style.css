@@ -9,22 +9,11 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-Bright orange: hsl(31, 77%, 52%)
-Dark cyan: hsl(184, 100%, 22%)
-Very dark cyan: hsl(179, 100%, 13%)
 
 ### Neutral
 
 Transparent white (paragraphs): hsla(0, 0%, 100%, 0.75)
-Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px */
+Very light gray (background, headings, buttons): hsl(0, 0%, 95%) */
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
@@ -33,24 +22,126 @@ Very light gray (background, headings, buttons): hsl(0, 0%, 95%)
 
 body {
     font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
 }
 
 p, .button, .attribution {
     font-family: 'Lexend Deca', sans-serif;
 }
 
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
 
 main {
     border: 2px solid blueviolet;
+    width: 1080px;
+    height: 475px;
+    display: flex;
 }
 
 
-.attribution { 
+.sedans, .suvs, .luxury {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 0 50px 0 40px;
+}
+
+main img {
+    width: 65px;
+    height: 40px;
+}
+
+
+
+.sedans {
+    border: 2px solid seagreen;
+    background-color: hsl(31, 77%, 52%);
+    /* border-radius: 5px 0 0 5px; */
+
+}
+
+.suvs {
+    border: 2px solid sienna;
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.luxury {
+    border: 2px solid salmon;
+    background-color: hsl(179, 100%, 13%);
+
+}
+
+
+
+
+
+.button {
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 95%);
+}
+
+.sedans .button {
+    color: hsl(31, 77%, 52%);
+}
+
+.suvs .button {
+    color: hsl(184, 100%, 22%);
+
+}
+
+.luxury .button {
+    color: hsl(179, 100%, 13%);
+}
+
+
+
+.button:hover {
+    color: hsl(0, 0%, 95%);
+    border: 2px solid hsl(0, 0%, 95%);
+}
+
+.sedans .button:hover {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.suvs .button:hover {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury .button:hover {
+    background-color: hsl(179, 100%, 13%);
+}
+
+
+
+
+
+.attribution {
+    border: 2px solid palevioletred;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 5px 0 0 0;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
