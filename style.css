@@ -1,22 +1,7 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 
-
-
-
-/* REDOING THE STYLING WITH MOBILE DEFAULT */
-
-/* MOBILE STYLE */
 html {
     font-size: 62.5%;
 }
@@ -32,12 +17,6 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-/* @media (min-width: 37.5em) {
-    body {
-        background-color: blueviolet;
-    }
-} */
-
 
 h1 {
     font-family: 'Big Shoulders Display', cursive;
@@ -56,8 +35,8 @@ p {
 
 
 
+
 main {
-    /* border: 2px solid blueviolet; */
     max-width: 90%;
 }
 @media (min-width: 37.5em) {
@@ -65,19 +44,14 @@ main {
     max-width: 60%;
     min-height: 20%;
     display: flex;
-    /* justify-content: baseline; */
     }
 }
 
 .sedans, .suvs, .luxury {
-    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     justify-content: flex-start;
     align-items: flex-start;
-    /* justify-content: space-around;
-    align-items: flex-start; */
     padding: 4.5rem;
 }
 @media (min-width: 37.5em) {
@@ -85,6 +59,9 @@ main {
         padding: 4rem;
     }
 }
+
+
+
 
 main img {
     width: 65px;
@@ -94,30 +71,19 @@ main img {
     margin-bottom: 1rem;
 }
 
-
 .car-description {
-    /* border: 1px solid black; */
     line-height: 180%;
-    /* padding: 0 3em 0 0; */
-    /* max-width: 90%; */
-
-    /* margin-right: 3rem; */
-    /* min-width: 80%; */
-    /* padding-top: 0; */
-    /* margin-top: 0; */
 }
 @media (min-width: 37.5em) {
     .car-description {
         margin-bottom: 7.5rem;
-        /* margin-top: 5rem; */
-        /* margin-top: auto; */
-        /* padding: 0.8em 1.5em; */
     }
 }
 
 
+
+
 .sedans {
-    /* border: 2px solid seagreen; */
     background-color: hsl(31, 77%, 52%);
     border-radius: 6px 6px 0 0;
 }
@@ -128,12 +94,10 @@ main img {
 }
 
 .suvs {
-    /* border: 2px solid sienna; */
     background-color: hsl(184, 100%, 22%);
 }
 
 .luxury {
-    /* border: 2px solid salmon; */
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 0 6px 6px;
 }
@@ -149,21 +113,12 @@ main img {
 /* BUTTON */
 
 .button {
-    /* max-width: 2rem;
-    min-height: 40px; */
-    /* min-width: 60%; */
     padding: 0.8em 1.5em;
     border-radius: 50px;
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(0, 0%, 95%);
     margin-top: 1rem;
 }
-/* @media (min-width: 37.5em) {
-    .luxury {
-        border-radius: 0 6px 6px 0;
-    }
-} */
-
 
 .sedans .button {
     color: hsl(31, 77%, 52%);
@@ -201,13 +156,7 @@ main img {
 
 
 
-
-
-
-
-
 .attribution {
-    /* border: 2px solid palevioletred; */
     text-align: center;
     margin-top: 2%;
 }
