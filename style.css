@@ -12,12 +12,21 @@ The designs were created to the following widths:
 
 
 
+
+
+/* REDOING THE STYLING WITH MOBILE DEFAULT */
+
+@media (min-width: 37.5em) {
+
+}
+
+/* MOBILE STYLE */
 html {
     font-size: 62.5%;
 }
 
 
-/* body - font-size: 15px; */
+
 body { 
     font-size: 1.5rem; 
     background-color: hsl(0, 0%, 95%);
@@ -34,7 +43,6 @@ h1 {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
     color: hsl(0, 0%, 95%);
-    /* margin-top: 0rem; */
     margin-bottom: 1rem;
 }
 
@@ -48,32 +56,30 @@ p {
 
 
 
-
 main {
     /* border: 2px solid blueviolet; */
-    /* width: 1000px; */
-    max-width: 60%;
-    min-width: 40%;
-    /* height: 475px; */
-    /* height: 90%; */
+    max-width: 70%;
+
+/* @media */
     /* min-height: 20%; */
-    display: flex;
-    justify-content: space-between;
+    /* display: flex;
+    justify-content: space-between; */
 }
 
 .sedans, .suvs, .luxury {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
-    /* padding: 0 50px 0 40px; */
-    padding: 5% 0 5% 5%;
+    /* justify-content: space-around;
+    align-items: flex-start; */
+    padding: 3.5rem;
 }
 
 main img {
-    /* width: 65px; */
-    /* height: 40px; */
+    width: 65px;
+    height: 40px;
     max-width: 4em;
     min-height: 2em;
     margin-bottom: 1rem;
@@ -84,9 +90,9 @@ main img {
     /* border: 1px solid black; */
     line-height: 180%;
     /* padding: 0 3em 0 0; */
-    max-width: 90%;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
+    /* max-width: 90%; */
+    /* margin-top: 1rem;
+    margin-bottom: 4rem; */
     /* margin-right: 3rem; */
     /* min-width: 80%; */
     /* padding-top: 0; */
@@ -94,13 +100,10 @@ main img {
 }
 
 
-
-
-
 .sedans {
     /* border: 2px solid seagreen; */
     background-color: hsl(31, 77%, 52%);
-    border-radius: 6px 0 0 6px;
+    border-radius: 6px 6px 0 0;
 
 }
 
@@ -113,10 +116,8 @@ main img {
 .luxury {
     /* border: 2px solid salmon; */
     background-color: hsl(179, 100%, 13%);
-    border-radius: 0 6px 6px 0;
-
+    border-radius: 0 0 6px 6px;
 }
-
 
 
 
@@ -126,11 +127,11 @@ main img {
     /* max-width: 2rem;
     min-height: 40px; */
     min-width: 60%;
-    padding: 1em;
+    padding: 0.80em;
     border-radius: 50px;
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(0, 0%, 95%);
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .sedans .button {
@@ -139,7 +140,6 @@ main img {
 
 .suvs .button {
     color: hsl(184, 100%, 22%);
-
 }
 
 .luxury .button {
@@ -170,16 +170,123 @@ main img {
 
 
 
+
+
+
+
+
 .attribution {
     /* border: 2px solid palevioletred; */
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 2%;
+    margin-top: 2%;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
     padding-left: 3px;
 }
+
+
+
+
+
+
+/* body - font-size: 15px; */
+/* body { 
+    font-size: 1.5rem; 
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+
+
+/* h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    margin-bottom: 1rem;
+}
+
+p, .button, .attribution {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+} */
+
+
+
+
+/* main {
+    border: 2px solid blueviolet;
+    max-width: 60%;
+    min-width: 40%;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .sedans, .suvs, .luxury {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5% 0 5% 5%;
+}
+
+main img {
+    width: 65px;
+    height: 40px;
+    max-width: 4em;
+    min-height: 2em;
+    margin-bottom: 1rem;
+} */
+
+
+/* .car-description {
+    line-height: 180%;
+    max-width: 90%;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+} */
+
+
+
+
+
+/* .sedans {
+    border: 2px solid seagreen;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 6px 0 0 6px;
+
+}
+
+.suvs {
+    border: 2px solid sienna;
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.luxury {
+    border: 2px solid salmon;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 6px 6px 0;
+
+} */
+
+
+
+
+
+
+
+
+
 
