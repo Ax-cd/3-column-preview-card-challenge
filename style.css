@@ -16,10 +16,6 @@ The designs were created to the following widths:
 
 /* REDOING THE STYLING WITH MOBILE DEFAULT */
 
-@media (min-width: 37.5em) {
-
-}
-
 /* MOBILE STYLE */
 html {
     font-size: 62.5%;
@@ -36,7 +32,11 @@ body {
     align-items: center;
     min-height: 100vh;
 }
-
+/* @media (min-width: 37.5em) {
+    body {
+        background-color: blueviolet;
+    }
+} */
 
 
 h1 {
@@ -58,23 +58,32 @@ p {
 
 main {
     /* border: 2px solid blueviolet; */
-    max-width: 70%;
-
-/* @media */
-    /* min-height: 20%; */
-    /* display: flex;
-    justify-content: space-between; */
+    max-width: 90%;
+}
+@media (min-width: 37.5em) {
+    main {
+    max-width: 60%;
+    min-height: 20%;
+    display: flex;
+    /* justify-content: baseline; */
+    }
 }
 
 .sedans, .suvs, .luxury {
     /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: flex-start;
     align-items: flex-start;
     /* justify-content: space-around;
     align-items: flex-start; */
-    padding: 3.5rem;
+    padding: 4.5rem;
+}
+@media (min-width: 37.5em) {
+    .sedans, .suvs, .luxury {
+        padding: 4rem;
+    }
 }
 
 main img {
@@ -91,12 +100,19 @@ main img {
     line-height: 180%;
     /* padding: 0 3em 0 0; */
     /* max-width: 90%; */
-    /* margin-top: 1rem;
-    margin-bottom: 4rem; */
+
     /* margin-right: 3rem; */
     /* min-width: 80%; */
     /* padding-top: 0; */
     /* margin-top: 0; */
+}
+@media (min-width: 37.5em) {
+    .car-description {
+        margin-bottom: 7.5rem;
+        /* margin-top: 5rem; */
+        /* margin-top: auto; */
+        /* padding: 0.8em 1.5em; */
+    }
 }
 
 
@@ -104,13 +120,16 @@ main img {
     /* border: 2px solid seagreen; */
     background-color: hsl(31, 77%, 52%);
     border-radius: 6px 6px 0 0;
-
+}
+@media (min-width: 37.5em) {
+    .sedans {
+        border-radius: 6px 0 0 6px;
+    }
 }
 
 .suvs {
     /* border: 2px solid sienna; */
     background-color: hsl(184, 100%, 22%);
-
 }
 
 .luxury {
@@ -118,6 +137,12 @@ main img {
     background-color: hsl(179, 100%, 13%);
     border-radius: 0 0 6px 6px;
 }
+@media (min-width: 37.5em) {
+    .luxury {
+        border-radius: 0 6px 6px 0;
+    }
+}
+
 
 
 
@@ -126,13 +151,19 @@ main img {
 .button {
     /* max-width: 2rem;
     min-height: 40px; */
-    min-width: 60%;
-    padding: 0.80em;
+    /* min-width: 60%; */
+    padding: 0.8em 1.5em;
     border-radius: 50px;
     border: 2px solid hsl(0, 0%, 95%);
     background-color: hsl(0, 0%, 95%);
-    /* margin-top: 3rem; */
+    margin-top: 1rem;
 }
+/* @media (min-width: 37.5em) {
+    .luxury {
+        border-radius: 0 6px 6px 0;
+    }
+} */
+
 
 .sedans .button {
     color: hsl(31, 77%, 52%);
@@ -178,115 +209,17 @@ main img {
 .attribution {
     /* border: 2px solid palevioletred; */
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 2%;
 }
+@media (min-width: 37.5em) {
+    .attribution {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
 .attribution a { 
     color: hsl(228, 45%, 44%);
     padding-left: 3px;
 }
-
-
-
-
-
-
-/* body - font-size: 15px; */
-/* body { 
-    font-size: 1.5rem; 
-    background-color: hsl(0, 0%, 95%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-} */
-
-
-
-/* h1 {
-    font-family: 'Big Shoulders Display', cursive;
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-    margin-bottom: 1rem;
-}
-
-p, .button, .attribution {
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-p {
-    color: hsla(0, 0%, 100%, 0.75);
-} */
-
-
-
-
-/* main {
-    border: 2px solid blueviolet;
-    max-width: 60%;
-    min-width: 40%;
-    display: flex;
-    justify-content: space-between;
-} */
-
-/* .sedans, .suvs, .luxury {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 5% 0 5% 5%;
-}
-
-main img {
-    width: 65px;
-    height: 40px;
-    max-width: 4em;
-    min-height: 2em;
-    margin-bottom: 1rem;
-} */
-
-
-/* .car-description {
-    line-height: 180%;
-    max-width: 90%;
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-} */
-
-
-
-
-
-/* .sedans {
-    border: 2px solid seagreen;
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 6px 0 0 6px;
-
-}
-
-.suvs {
-    border: 2px solid sienna;
-    background-color: hsl(184, 100%, 22%);
-
-}
-
-.luxury {
-    border: 2px solid salmon;
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 6px 6px 0;
-
-} */
-
-
-
-
-
-
-
-
-
-
